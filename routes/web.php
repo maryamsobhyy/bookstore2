@@ -71,10 +71,10 @@ Route::get('/admin/home', [maincontroller::class, 'index'])->name('home.index')-
 
 Route::get('/productsss', [ProductController::class, 'index'])
     ->name('products.index');
-
+// Route::get('/api/products', [ProductController::class, 'getall'])
+//     ->name('products.api');
 Route::get('/products/create', [ProductController::class, 'create'])
     ->name('products.create');
-
 Route::post('/products/store', [ProductController::class, 'store'])
     ->name('products.store');
 Route::get('/category', [categorycontroller::class, 'index'])

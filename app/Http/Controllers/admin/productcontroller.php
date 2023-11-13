@@ -21,6 +21,7 @@ class productcontroller extends Controller
         $products = Product::paginate();
         return view('admin.pages.product.index', compact('products'));
     }
+    
     public function create()
     {
         $categories = Category::select('id', 'name')

@@ -10,7 +10,6 @@
     if(auth()->id()){
         $carts = Cart::session(auth()->id())->getContent();
     }
-
     @endphp
     <div class="nav__categories-body offcanvas-body pt-4">
       <p>لا توجد منتجات في سلة المشتريات.</p>
